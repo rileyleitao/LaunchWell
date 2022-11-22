@@ -1,6 +1,5 @@
 <template>
   <div>
-    <p>Product Selection</p>
     <div>
       <h2 class="d-flex justify-center my-10">Build what you need!</h2>
       <h3 class="d-flex justify-center my-10">

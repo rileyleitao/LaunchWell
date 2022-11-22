@@ -84,9 +84,10 @@ export default {
   font-weight: 800;
 }
 .h2 {
-  font-size: 3em;
+  font-size: 13em;
   font-family: "Raleway", "sans-serif";
   font-weight: 600;
+  letter-spacing: 2px;
 }
 .h3 {
   font-size: 2em;
@@ -116,6 +117,9 @@ export default {
 
 .blue {
   color: #0ea5e9;
+}
+.blue_background {
+  background-color: #0ea4e966;
 }
 
 .purple {

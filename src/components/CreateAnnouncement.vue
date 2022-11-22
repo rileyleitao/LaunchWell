@@ -16,6 +16,7 @@
           label="Title"
           outlined
           clearable
+          class="rounded-lg"
         >
         </v-text-field>
         <v-text-field
@@ -25,6 +26,7 @@
           outlined
           clearable
           height="100px"
+          class="rounded-lg"
         >
         </v-text-field>
         <v-card-actions>
@@ -34,8 +36,17 @@
       </v-form>
     </v-container>
     <v-container>
-      <h2>output:</h2>
-      <h3>{{ form.content }}</h3>
+      <v-card outlined rounded-lg class="pa-5 rounded-lg" min-height="500px">
+        <div class="d-flex justify-space-between">
+          <h4>{{ form.productSelection }} Preview:</h4>
+          <h3>{{ form.title }}</h3>
+
+          <h4>Date: {{ date }}</h4>
+        </div>
+        <v-divider class="pb-5 mt-2"></v-divider>
+        <h4>Content: {{ form.content }}</h4>
+        <h4></h4>
+      </v-card>
     </v-container>
   </v-container>
 </template>
@@ -61,6 +72,9 @@ export default {
     formIsValid() {
       return this.form.title && this.form.content && this.form.productSelection;
     },
+    date() {
+      return new Date().toLocaleDateString();
+    },
   },
   methods: {
     resetForm() {
@@ -79,3 +93,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+.blue_background {
+  background-color: #0ea4e96d;
+}
+</style>

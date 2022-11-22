@@ -6,14 +6,20 @@
       <h5 class="mb-5">
         Use AI to help announce your latest feature or event.
       </h5>
-      <v-btn class="primary">
-        <v-icon>mdi-plus</v-icon>
-        Create Announcement
-      </v-btn>
+      <router-link
+        :to="{
+          name: 'Create',
+        }"
+      >
+        <v-btn class="primary">
+          <v-icon>mdi-plus</v-icon>
+          Create Announcement
+        </v-btn>
+      </router-link>
     </v-sheet>
   </div>
 </template>
-
+ 
 <script>
 // @ is an alias to /src
 
