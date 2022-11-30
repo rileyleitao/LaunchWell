@@ -132,4 +132,7 @@ export default {
 .navy {
   color: #0b1120;
 }
+.lilac {
+  background-color: #faf9ff;
+}
 </style>

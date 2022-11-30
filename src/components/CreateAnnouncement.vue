@@ -65,7 +65,7 @@ export default {
       rules: {
         required: (value) => !!value || "Required.",
       },
-      productSelection: ["Announcement", "Onboarding", "Tutorial"],
+      productSelection: ["Headline", "Onboarding", "Announcement", "Other"],
     };
   },
   computed: {
