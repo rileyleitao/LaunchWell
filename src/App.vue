@@ -24,11 +24,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar flat app color="#0b1120">
-      <v-app-bar-nav-icon
-        v-if="$vuetify.breakpoint.mdAndDown"
-        dark
-        @click="drawer = !drawer"
-      ></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon dark @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-spacer>
         <!-- <v-toolbar-title dark class="centerText h3-app"
           >Riley Parada</v-toolbar-title
@@ -50,7 +46,7 @@
 <script>
 export default {
   data: () => ({
-    drawer: true,
+    drawer: null,
     items: [
       { title: "Create", icon: "mdi-plus", to: "/create" },
       { title: "Dashboard", icon: "mdi-view-dashboard", to: "/about" },
