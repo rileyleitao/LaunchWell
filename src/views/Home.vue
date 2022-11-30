@@ -19,8 +19,8 @@
           name: 'Create',
         }"
       >
-        <v-btn class="primary d-flex align-center mt-5">
-          <v-icon>mdi-plus</v-icon>
+        <v-btn class="primary d-flex align-center mt-5 rounded-lg px-5 py-4">
+          <v-icon class="mr-3">mdi-plus</v-icon>
           Generate Content
         </v-btn>
       </router-link>

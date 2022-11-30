@@ -56,7 +56,9 @@
             >
             </v-textarea>
 
-            <v-btn class="mt-5 primary" @click="sendEmail">Submit</v-btn>
+            <v-btn class="px-5 py-4 primary rounded-lg" @click="sendEmail"
+              >Submit</v-btn
+            >
           </v-form>
           <!-- <form ref="form1"></form> -->
         </v-col>

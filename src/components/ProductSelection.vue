@@ -18,7 +18,7 @@
           hero section or an advertisement.
         </v-card-subtitle>
         <v-card-actions>
-          <v-btn class="primary" :to="{ name: 'Create' }"
+          <v-btn class="primary rounded-lg px-5 py-4" :to="{ name: 'Create' }"
             >Create Announcement</v-btn
           >
         </v-card-actions>
@@ -35,7 +35,10 @@
           them to understand your product.
         </v-card-subtitle>
         <v-card-actions>
-          <v-btn class="primary" text :to="{ name: 'Create' }"
+          <v-btn
+            class="primary rounded-lg px-5 py-4"
+            text
+            :to="{ name: 'Create' }"
             >Create onboarding</v-btn
           >
         </v-card-actions>
@@ -52,7 +55,7 @@
           users.
         </v-card-subtitle>
         <v-card-actions>
-          <v-btn class="primary" :to="{ name: 'Create' }"
+          <v-btn class="primary rounded-lg px-5 py-4" :to="{ name: 'Create' }"
             >Create Announcement</v-btn
           >
         </v-card-actions>

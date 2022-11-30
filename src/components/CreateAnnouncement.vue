@@ -31,7 +31,9 @@
         </v-text-field>
         <v-card-actions>
           <v-btn text @click="resetForm">Cancel </v-btn>
-          <v-btn class="primary" text @click="submit">Submit</v-btn>
+          <v-btn class="primary rounded-lg px-5 py-4" text @click="submit"
+            >Submit</v-btn
+          >
         </v-card-actions>
       </v-form>
     </v-container>
