@@ -54,11 +54,11 @@ export default {
     items: [
       { title: "Create", icon: "mdi-plus", to: "/create" },
       { title: "Dashboard", icon: "mdi-view-dashboard", to: "/about" },
-      { title: "Template", icon: "mdi-math-norm-box", to: "/Parallel" },
+      { title: "Template", icon: "mdi-math-norm-box", to: "/template" },
       {
         title: "Contact",
         icon: "mdi-email",
-        to: "/Contact",
+        to: "/contact",
       },
 
       // { title: "Sign in", icon: "mdi-image", to: "/signup" },

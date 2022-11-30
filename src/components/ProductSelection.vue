@@ -1,14 +1,13 @@
 <template>
   <div>
     <div>
-      <h2 class="d-flex justify-center my-10">Build what you need!</h2>
-      <h3 class="d-flex justify-center my-10">
-        Select the item you're looking to build
-      </h3>
+      <h2 class="d-flex justify-center my-10">
+        Get started by selecting a template
+      </h2>
     </div>
     <v-row class="d-flex justify-space-around pt-10">
       <v-card
-        class="pa-5 ma-10"
+        class="pa-5 ma-5"
         @click="$router.push({ name: 'AnnouncementCreator' })"
       >
         <v-img></v-img>
@@ -23,7 +22,7 @@
         </v-card-actions>
       </v-card>
       <v-card
-        class="pa-5 ma-10"
+        class="pa-5 ma-5"
         @click="$router.push({ name: 'AnnouncementCreator' })"
       >
         <v-img></v-img>
@@ -38,7 +37,7 @@
         </v-card-actions>
       </v-card>
       <v-card
-        class="pa-5 ma-10"
+        class="pa-5 ma-5"
         @click="$router.push({ name: 'AnnouncementCreator' })"
       >
         <v-img></v-img>
