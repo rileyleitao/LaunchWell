@@ -1,8 +1,16 @@
 <template>
   <div class="d-flex justify-center align-center mt-15">
-    <v-sheet>
-      <v-icon class="mb-5" x-large>mdi-podcast</v-icon>
-      <h3>Make an announcement worth hearing</h3>
+    <v-sheet
+      outlined
+      class="lilac pa-15 rounded-xl align-center d-flex flex-column"
+    >
+      <v-img
+        src="../assets/apple_announcement.png"
+        class="ma-10 d-flex justify-center"
+        max-width="50%"
+      >
+      </v-img>
+      <h3 class="pt-5">Make an announcement worth hearing</h3>
       <h5 class="mb-5">
         Use AI to help announce your latest feature or event.
       </h5>
@@ -11,9 +19,9 @@
           name: 'Create',
         }"
       >
-        <v-btn class="primary">
-          <v-icon>mdi-plus</v-icon>
-          Create Announcement
+        <v-btn class="primary d-flex align-center mt-5 rounded-lg px-5 py-4">
+          <v-icon class="mr-3">mdi-plus</v-icon>
+          Generate Content
         </v-btn>
       </router-link>
     </v-sheet>
@@ -27,3 +35,8 @@ export default {
   name: "Home",
 };
 </script>
+<style scoped>
+.lilac {
+  background-color: #faf9ff;
+}
+</style>

@@ -7,7 +7,7 @@
   </div>
 </template>
 <script>
-import CreateAnnouncement from "../components/CreateAnnouncement.vue";
+import CreateAnnouncement from "@/components/CreateAnnouncement.vue";
 
 export default {
   name: "AnnouncementCreator",

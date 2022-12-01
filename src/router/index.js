@@ -2,6 +2,8 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Create from "../views/Create.vue";
+import Template from "../views/Template.vue";
+import Contact from "../views/Contact.vue";
 
 Vue.use(VueRouter);
 
@@ -26,6 +28,11 @@ const routes = [
     component: Create,
   },
   {
+    path: "/template",
+    name: "Template",
+    component: Template,
+  },
+  {
     path: "/dashboard",
     name: "Dashboard",
     component: Create,
@@ -33,6 +40,11 @@ const routes = [
   {
     path: "/announcementcreator",
     name: "AnnouncementCreator",
+  },
+  {
+    path: "/contact",
+    name: "Contact",
+    component: Contact,
   },
 ];
 //history to remove the #//
