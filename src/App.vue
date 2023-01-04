@@ -1,7 +1,7 @@
 
 <template>
-  <v-app>
-    <v-navigation-drawer color="#0b1120" dark v-model="drawer" app>
+  <v-app background-color="0e0e0e">
+    <v-navigation-drawer color="#0e0e0e" dark v-model="drawer" app>
       <!-- <v-list-item>
         <v-list-item-content> -->
       <!-- <v-list-item-title class="text-h6"> Riley Parada </v-list-item-title> -->
@@ -10,7 +10,7 @@
       </v-list-item> -->
 
       <v-divider></v-divider>
-      <v-img src="./assets/revue-logo.png" class="ma-10"> </v-img>
+      <v-img src="./assets/revue-logo.png" class="ma-4" width="150px"> </v-img>
       <v-list dense nav>
         <v-list-item v-for="item in items" :key="item.title" :to="item.to" link>
           <v-list-item-icon>
@@ -23,7 +23,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar flat app color="#0b1120">
+    <v-app-bar flat app color="#0e0e0e">
       <v-app-bar-nav-icon dark @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-spacer>
         <!-- <v-toolbar-title dark class="centerText h3-app"
@@ -48,12 +48,12 @@ export default {
   data: () => ({
     drawer: null,
     items: [
-      { title: "Create", icon: "mdi-plus", to: "/create" },
-      { title: "Dashboard", icon: "mdi-view-dashboard", to: "/about" },
+      { title: "Create", icon: "mdi-plus-outline", to: "/create" },
+      { title: "Dashboard", icon: "mdi-view-dashboard-outline", to: "/about" },
       { title: "Template", icon: "mdi-math-norm-box", to: "/template" },
       {
         title: "Contact",
-        icon: "mdi-email",
+        icon: "mdi-email-outline",
         to: "/contact",
       },
 
