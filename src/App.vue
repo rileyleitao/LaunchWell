@@ -1,6 +1,6 @@
 
 <template>
-  <v-app background-color="0e0e0e">
+  <v-app background-color="#0e0e0e">
     <v-navigation-drawer color="#0e0e0e" dark v-model="drawer" app>
       <!-- <v-list-item>
         <v-list-item-content> -->
