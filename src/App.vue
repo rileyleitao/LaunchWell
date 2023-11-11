@@ -10,7 +10,7 @@
       </v-list-item> -->
 
       <v-divider></v-divider>
-      <router-link to="/Create">
+      <router-link to="/">
       <v-img src="./assets/LaunchWellLogo.svg" class="ma-3"> </v-img>
       </router-link>
       <v-list dense nav>
