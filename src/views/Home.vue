@@ -1,27 +1,45 @@
 <template>
-  <div class="d-flex justify-center align-center mt-15">
+  <div class="d-flex justify-center align-center my-9">
     <v-sheet
       outlined
-      class="lilac pa-15 rounded-xl align-center d-flex flex-column"
+      class="lilac pa-12 rounded-xl align-center d-flex flex-column"
     >
       <v-img
         src="../assets/apple_announcement.png"
-        class="ma-10 d-flex justify-center"
-        max-width="50%"
+        class="mb-10 d-flex justify-center"
+        max-width="20%"
       >
       </v-img>
-      <h3 class="pt-5">Make an announcement worth hearing</h3>
+      <h2 class="pt-5">Launch Your Beta With Ease!</h2>
       <h5 class="mb-5">
-        Use AI to help announce your latest feature or event.
+        <v-list class="lilac py-8">
+          <v-list-item-group
+          v-model="selectedItem"
+          class="lilac">
+        
+          <v-list-item
+        v-for="(item, i) in items"
+        :key="i"
+        >
+        <v-list-item-icon>
+            <v-icon color='green' large v-text="item.icon"></v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title v-text="item.text"></v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list-item-group>
+    </v-list>
+
       </h5>
       <router-link
         :to="{
           name: 'Create',
         }"
       >
-        <v-btn class="primary d-flex align-center mt-5 rounded-lg px-5 py-4">
+        <v-btn class="primary d-flex align-center rounded-lg px-5 py-2">
           <v-icon class="mr-3">mdi-plus</v-icon>
-          Generate Content
+          Create Beta Launch
         </v-btn>
       </router-link>
     </v-sheet>
@@ -33,7 +51,16 @@
 
 export default {
   name: "Home",
-};
+  data:()=>({
+    selectedItem: null,
+    items: [
+      { icon: "mdi-check", text: "Create engaging release announcements." },
+      { icon: "mdi-check", text: "Gather a community of testers." },
+      { icon: "mdi-check", text: "Gather feedback." },
+      { icon: "mdi-check", text: "Upsell your product." },
+    ],
+  }),
+  };
 </script>
 <style scoped>
 .lilac {
