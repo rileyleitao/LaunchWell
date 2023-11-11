@@ -4,9 +4,10 @@
       <v-row>
         <v-col cols="12" sm="6" md="4" lg="6" offset="3">
           <v-form>
-            <h1 class="d-flex justify-center pb-10">
-              Tell us what you're announcing!
+            <h1 class="d-flex justify-center pb-10">              
+              ✨ Launch Beta ✨
             </h1>
+            
             <v-select
               v-model="form.productSelection"
               :items="productSelection"
@@ -17,7 +18,7 @@
             <v-text-field
               required
               v-model="form.title"
-              label="Title"
+              label="Beta Title"
               outlined
               clearable
               class="rounded-lg"
@@ -26,17 +27,28 @@
             <v-text-field
               required
               v-model="form.content"
-              label="Content"
+              label="Beta Description"
               outlined
               clearable
               height="100px"
               class="rounded-lg"
             >
-            </v-text-field>
+          </v-text-field>
+            <v-file-input
+            v.model="form.video"
+            dense
+
+            outlined
+            clearable
+            class="rounded-lg"
+            label="Upload Video"
+            filled
+            prepend-icon="mdi-video"
+            ></v-file-input>
             <v-card-actions>
               <v-btn text @click="resetForm">Cancel </v-btn>
               <v-btn class="primary rounded-lg px-5 py-4" text @click="submit"
-                >Submit</v-btn
+                >Publish</v-btn
               >
             </v-card-actions>
           </v-form>
@@ -60,8 +72,10 @@
               <h4>Date: {{ date }}</h4>
             </div>
             <v-divider class="pb-5 mt-2"></v-divider>
-            <h4 class="py-5">Content: {{ form.content }}</h4>
-            <h4 class="pt-5">AI Suggestion: {{ AIContent }}</h4>
+            <h1 class="py-5">{{ form.title }}</h1>
+            <h4 class="py-5">Video Overview: {{ form.video }}</h4>
+            <h4 class="py-5">Description: {{ form.content }}</h4>
+            <!-- <h4 class="pt-5">AI Summary: {{ AIContent }}</h4> -->
           </v-card>
         </v-col>
       </v-row>
@@ -76,7 +90,9 @@ export default {
       productSelection: "",
       title: "",
       content: "",
+      video: "",
       snackbar: false,
+
     });
     return {
       AIContent: "",
