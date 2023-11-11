@@ -10,12 +10,12 @@
         max-width="20%"
       >
       </v-img>
-      <h2 class="pt-5">Launch Your Beta With Ease!</h2>
-      <h5 class="mb-5">
-        <v-list class="lilac py-8">
+      <h2 class="py-5">Launch Your Beta With Ease!</h2>
+        <v-list class="lilac mb-5">
           <v-list-item-group
+          
           v-model="selectedItem"
-          class="lilac">
+          class="lilac font-weight-bold">
         
           <v-list-item
         v-for="(item, i) in items"
@@ -31,7 +31,6 @@
       </v-list-item-group>
     </v-list>
 
-      </h5>
       <router-link
         :to="{
           name: 'Create',
