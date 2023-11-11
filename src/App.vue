@@ -1,7 +1,7 @@
 
 <template>
   <v-app>
-    <v-navigation-drawer color="#0b1120" dark v-model="drawer" app>
+    <v-navigation-drawer color="#11150D" dark v-model="drawer" app>
       <!-- <v-list-item>
         <v-list-item-content> -->
       <!-- <v-list-item-title class="text-h6"> Riley Parada </v-list-item-title> -->
@@ -10,7 +10,9 @@
       </v-list-item> -->
 
       <v-divider></v-divider>
-      <v-img src="./assets/revue-logo.png" class="ma-10"> </v-img>
+      <router-link to="/Create">
+      <v-img src="./assets/LaunchWellLogo.svg" class="ma-3"> </v-img>
+      </router-link>
       <v-list dense nav>
         <v-list-item v-for="item in items" :key="item.title" :to="item.to" link>
           <v-list-item-icon>
@@ -23,7 +25,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar flat app color="#0b1120">
+    <v-app-bar flat app color="#11150D">
       <v-app-bar-nav-icon dark @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-spacer>
         <!-- <v-toolbar-title dark class="centerText h3-app"

@@ -1,4 +1,4 @@
-# revue
+# LaunchWell
 
 ## Project setup
 ```
