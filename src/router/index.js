@@ -4,6 +4,7 @@ import Home from "../views/Home.vue";
 import Create from "../views/Create.vue";
 import Template from "../views/Template.vue";
 import Contact from "../views/Contact.vue";
+import Login from "../views/Login.vue";
 
 Vue.use(VueRouter);
 
@@ -46,6 +47,11 @@ const routes = [
     name: "Contact",
     component: Contact,
   },
+  {
+    path:"/login",
+    name:"Login",
+    component: Login,
+  }
 ];
 //history to remove the #//
 const router = new VueRouter({
