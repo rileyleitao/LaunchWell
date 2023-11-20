@@ -19,7 +19,7 @@
               required
               v-model="form.title"
               label="Beta Title"
-              outlined
+              
               clearable
               class="rounded-lg"
             >
@@ -28,7 +28,7 @@
               required
               v-model="form.content"
               label="Beta Description"
-              outlined
+              
               clearable
               height="100px"
               class="rounded-lg"
@@ -37,11 +37,9 @@
             <v-file-input
             v.model="form.video"
             dense
-
-            outlined
             clearable
             class="rounded-lg"
-            label="Upload Video"
+            label="Demo Video"
             filled
             prepend-icon="mdi-video"
             ></v-file-input>
@@ -73,7 +71,7 @@
             </div>
             <v-divider class="pb-5 mt-2"></v-divider>
             <h1 class="py-5">{{ form.title }}</h1>
-            <h4 class="py-5">Video Overview: {{ form.video }}</h4>
+            <h4 class="py-5">Video Overview: <div>{{ form.video }}</div></h4>
             <h4 class="py-5">Description: {{ form.content }}</h4>
             <!-- <h4 class="pt-5">AI Summary: {{ AIContent }}</h4> -->
           </v-card>

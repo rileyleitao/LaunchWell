@@ -10,14 +10,15 @@
         max-width="20%"
       >
       </v-img>
-      <h2 class="py-5">Launch Your Beta With Ease!</h2>
-        <v-list class="lilac mb-5">
+      <h2 class="py-5">Launch With Ease!</h2>
+        <v-list class="{'dense bold lilac mb-3'}">
+    
           <v-list-item-group
           
           v-model="selectedItem"
           class="lilac font-weight-bold">
         
-          <v-list-item
+          <v-list-item dense
         v-for="(item, i) in items"
         :key="i"
         >
@@ -38,7 +39,7 @@
       >
         <v-btn class="primary d-flex align-center rounded-lg px-5 py-2">
           <v-icon class="mr-3">mdi-plus</v-icon>
-          Create Beta Launch
+          Launch Product
         </v-btn>
       </router-link>
     </v-sheet>
@@ -54,6 +55,7 @@ export default {
     selectedItem: null,
     items: [
       { icon: "mdi-check", text: "Create engaging release announcements." },
+      { icon: "mdi-check", text: "Empower usage of features at scale." },
       { icon: "mdi-check", text: "Gather a community of testers." },
       { icon: "mdi-check", text: "Gather feedback." },
       { icon: "mdi-check", text: "Upsell your product." },
